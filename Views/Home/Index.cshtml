@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="intro" style="position: fixed; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; z-index: 9999;">
+    <h1 id="welcome-message" style="font-size: 3em; white-space: nowrap; overflow: hidden; border-right: .15em solid orange; font-family: 'Courier New'; font-weight: bold; color: orange;"> </h1>
+</div>
+
+<div class="container">
+    <!-- Conteúdo da página inicial aqui -->
+</div>
+
+<script>
+    var text = 'Bem-vindo ao nosso supermercado!';
+    var index = 0;
+
+    function type() {
+        if (index < text.length) {
+            document.getElementById('welcome-message').textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 100); // Ajuste a velocidade de digitação alterando este valor
+        }
+    }
+
+    window.onload = function() {
+        setTimeout(type, 500); // A mensagem de boas-vindas começará a ser digitada após 0,5 segundos
+    };
+</script>

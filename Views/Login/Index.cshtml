@@ -1,0 +1,40 @@
+
+@model supermercado_prova.Models.Usuario
+
+@{
+  ViewData["Title"] = "Login";
+  Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<div class="background">
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+
+<form asp-action="Login" asp-controller="Login">
+  <h3>Login</h3>
+
+  <label for="usuario">Usuário: </label>
+  @Html.TextBoxFor(model => model.Login, new { placeholder="Digite seu usuário" })
+  @Html.ValidationMessageFor(model => model.Login)
+
+  <label for="senha">Senha: </label>
+  @Html.PasswordFor(model => model.Senha, new { placeholder="Digite sua senha" })
+  @Html.ValidationMessageFor(model => model.Senha)
+
+  <button type="submit" class="btn btn-primary btn-lg">Acessar</button>
+
+  @if (!String.IsNullOrEmpty(ViewBag.Errors))
+  {
+    <script>
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: '@Html.Raw(ViewBag.Errors)',
+        timer: 3000,
+        showConfirmButton: false
+      })
+    </script>
+  }
+
+</form>
