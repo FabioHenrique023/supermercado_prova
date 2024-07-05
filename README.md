@@ -1,34 +1,98 @@
-# Aplicação de Cadastro de Clientes - Projeto desenvolvido para a disciplina de PROGRAMAÇÃO WEB I	
+# Projeto CRUD de Clientes - Supermercado
 
-## Descrição
-Este projeto é uma aplicação web que permite o cadastro, listagem, atualização e exclusão de clientes para um supermercado. Os dados dos clientes são armazenados em um arquivo JSON. Além disso, a aplicação possui autenticação para garantir que apenas usuários autorizados possam acessá-la.
+Este projeto foi desenvolvido como parte da disciplina de Programação Web 1 e consiste em um sistema CRUD (Create, Read, Update, Delete) para o cadastro de clientes de um supermercado. O sistema permite que os dados dos clientes sejam utilizados para efetuar vendas nominais no estabelecimento.
 
-## Requisitos Obrigatórios
-1. **Cadastro de Usuário:**
-   - Crie uma página para cadastrar usuários.
-   - A senha deve ser criptografada antes de ser armazenada.
-   - Os usuários só podem editar seus próprios perfis.
+## Funcionalidades
 
-2. **Persistência de Dados:**
-   - Os dados dos clientes devem ser armazenados em um arquivo JSON.
+- **Cadastro de Clientes**: Adicionar novos clientes ao sistema.
+- **Listagem de Clientes**: Visualizar a lista de clientes cadastrados.
+- **Atualização de Clientes**: Editar informações dos clientes cadastrados.
+- **Exclusão de Clientes**: Remover clientes do sistema.
+- **Autenticação de Usuário**: Sistema de login para acesso à aplicação.
+- **Exportação de Dados**: Exportar o cadastro do cliente em formato JSON.
 
-3. **Linguagem de Programação:**
-   - O sistema deve ser desenvolvido em uma linguagem de programação nativamente web. No seu caso, C# com ASP.NET MVC e Razor é uma ótima escolha.
+## Requisitos do Sistema
 
-4. **Operações CRUD:**
-   - Implemente todas as operações CRUD (Create, Read, Update e Delete) para os clientes.
+O sistema implementa os seguintes campos obrigatórios para o cadastro de clientes:
 
-5. **Validações:**
-   - Não permita cadastrar clientes com o mesmo CPF/CNPJ (Campo `CodigoFiscal`) ou Inscrição Estadual (Campo `InscricaoEstatudal`).
-   - O usuário deve escolher uma cidade existente; não é permitido cadastrar novas cidades.
+- **ID**: Código único do sistema que identifica o cliente.
+- **CodigoFiscal**: CPF/CNPJ do Cliente.
+- **InscricaoEstatudal**: Número com até 15 dígitos.
+- **Nome**: Nome do cliente.
+- **NomeFantasia**: Nome Fantasia do cliente.
+- **Endereco**: Endereço do cliente.
+- **Numero**: Número do endereço do cliente.
+- **Bairro**: Bairro do endereço do cliente.
+- **Cidade**: Cidade onde o cliente mora.
+- **Estado**: Estado onde o cliente mora.
+- **DataNascimento**: Data de nascimento para pessoas físicas e data de abertura para pessoas jurídicas.
+- **Imagem**: Foto ou logo do cliente.
 
-6. **Tela de Cadastro/Edição:**
-   - A tela de inserção e atualização dos dados do cliente deve ser a mesma.
-   - Inclua um botão para exportar o cadastro do cliente em formato JSON.
+## Requisitos Obrigatórios Atendidos
+
+- Página para cadastro de usuários.
+- Senha criptografada para os usuários.
+- Usuários só podem editar seus próprios perfis.
+- Persistência de dados em arquivo JSON.
+- Implementação completa das operações CRUD para clientes.
+- Validação para evitar cadastro de Clientes com CodigoFiscal ou InscricaoEstatudal duplicados.
+- Seleção de cidades a partir de uma lista pré-definida, sem possibilidade de cadastro de novas cidades.
+- Tela unificada para inserção e atualização dos dados do cliente.
+- Botão para exportação do cadastro do cliente em formato JSON na tela de criar/editar cliente.
+
+## Tecnologias Utilizadas
+
+- **Linguagem de Programação**: C# (ASP.NET Core MVC/Razor)
+- **Persistência de Dados**: Arquivo JSON
+- **Interface de Usuário**: Razor Pages
+- **Segurança**: Criptografia de Senhas
 
 ## Como Executar o Projeto
-1. Clone o repositório para sua máquina local.
-2. Abra o projeto no Visual Studio ou na sua IDE preferida.
-3. Execute a aplicação.
-4. Acesse a página de cadastro de usuários e crie um usuário.
-5. Acesse a aplicação com o usuário criado e comece a cadastrar clientes!
+
+1. **Clone o repositório**:
+   ```sh
+   git clone https://github.com/FabioHenrique023/supermercado_prova.git
+   ```
+
+2. **Navegue até o diretório do projeto**:
+   ```sh
+   cd supermercado_prova
+   ```
+
+3. **Instale as dependências**:
+   ```sh
+   dotnet restore
+   ```
+
+4. **Execute o projeto**:
+   ```sh
+   dotnet run
+   ```
+
+5. **Acesse a aplicação**:
+   Abra o navegador e vá para `http://localhost:5000`
+
+## Estrutura do Projeto
+
+- **Controllers**: Contém os controladores da aplicação.
+- **Models**: Contém as classes de modelo.
+- **Views**: Contém as páginas Razor.
+- **Data**: Contém o arquivo JSON para persistência de dados.
+
+## Contribuição
+
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`).
+3. Commit suas alterações (`git commit -m 'Add some AmazingFeature'`).
+4. Push para a branch (`git push origin feature/AmazingFeature`).
+5. Abra um Pull Request.
+
+## Licença
+
+Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## Contato
+
+Fábio Henrique - fabiohomeoffice904@gmail.com
+
+Link do Projeto: [https://github.com/FabioHenrique023/supermercado_prova.git](https://github.com/FabioHenrique023/supermercado_prova.git)
