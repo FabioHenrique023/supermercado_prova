@@ -70,26 +70,14 @@ O sistema implementa os seguintes campos obrigatórios para o cadastro de client
    ```
 
 5. **Acesse a aplicação**:
-   Abra o navegador e vá para `http://localhost:5000`
+   Abra o navegador e vá para `http://localhost:5259`
 
 ## Estrutura do Projeto
 
 - **Controllers**: Contém os controladores da aplicação.
 - **Models**: Contém as classes de modelo.
 - **Views**: Contém as páginas Razor.
-- **Data**: Contém o arquivo JSON para persistência de dados.
-
-## Contribuição
-
-1. Faça um fork do projeto.
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`).
-3. Commit suas alterações (`git commit -m 'Add some AmazingFeature'`).
-4. Push para a branch (`git push origin feature/AmazingFeature`).
-5. Abra um Pull Request.
-
-## Licença
-
-Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+- **Raiz do projeto**: Contém o arquivo JSON para persistência de dados.
 
 ## Contato
 
