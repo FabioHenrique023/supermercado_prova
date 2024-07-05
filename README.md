@@ -72,6 +72,10 @@ O sistema implementa os seguintes campos obrigatórios para o cadastro de client
 5. **Acesse a aplicação**:
    Abra o navegador e vá para `http://localhost:5259`
 
+6. **Acesse com o usuário padrão**:
+   - **Login**: `admin`
+   - **Senha**: `123456`
+
 ## Estrutura do Projeto
 
 - **Controllers**: Contém os controladores da aplicação.
