@@ -1,8 +1,4 @@
-# supermercado_prova
-Projeto desenvolvido para a disciplina de PROGRAMAÇÃO WEB I	
-Claro! Vou ajudá-lo a criar um README para sua aplicação ASP.NET MVC com Razor em C#. Primeiro, parabéns por concluir os requisitos propostos! Vamos começar:
-
-# Aplicação de Cadastro de Clientes - README
+# Aplicação de Cadastro de Clientes - Projeto desenvolvido para a disciplina de PROGRAMAÇÃO WEB I	
 
 ## Descrição
 Este projeto é uma aplicação web que permite o cadastro, listagem, atualização e exclusão de clientes para um supermercado. Os dados dos clientes são armazenados em um arquivo JSON. Além disso, a aplicação possui autenticação para garantir que apenas usuários autorizados possam acessá-la.
@@ -36,12 +32,3 @@ Este projeto é uma aplicação web que permite o cadastro, listagem, atualizaç
 3. Execute a aplicação.
 4. Acesse a página de cadastro de usuários e crie um usuário.
 5. Acesse a aplicação com o usuário criado e comece a cadastrar clientes!
-
-## TODO
-- [ ] Melhorar a interface do usuário.
-- [ ] Implementar testes automatizados.
-- [ ] Adicionar validações de campos.
-- [ ] Documentar o código.
-- [ ] Refatorar partes do código, se necessário.
-
-Sinta-se à vontade para personalizar este README com mais detalhes sobre a estrutura do projeto, instruções de instalação e uso, e qualquer outra informação relevante. Bom trabalho! 🚀
